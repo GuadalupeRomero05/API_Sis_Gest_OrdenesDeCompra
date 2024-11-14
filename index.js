@@ -191,7 +191,7 @@ app.get('/ListarProductos/:dato', (req, res) => {
 
 
 app.get('/ListarProductos/', (req, res) => {
-    const datos = leerDatos();
+    const datos = leerDatos();  
     res.json(datos.productos)
 });
 // Busca producto por su id
